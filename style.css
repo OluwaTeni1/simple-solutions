@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+:root {
+  --orange-1: #ffe5d1;
+  --orange-2: #db6100;
+  --white: #fefefe;
+  --green: #1f8f00;
+  --purple: #8f0072;
+  --yellow: #fff700;
+  --red: #b00000;
+}
+
+* {
+  font-family: "DM Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  width: 100%;
+  background: linear-gradient(
+    45deg,
+    #fffaf6,
+    #fefefe,
+    #fefefe,
+    #fffaf6
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.card-wrapper {
+  max-width: 100%;
+  margin: 0 60px 35px;
+  padding: 20px 10px;
+  overflow: hidden;
+}
+
+.card-list .card-item {
+  list-style: none;
+}
+
+.card-list .card-item .card-link {
+  user-select: none;
+  display: block;
+  background: #fff;
+  padding: 18px;
+  border-radius: 12px;
+  text-decoration: none;
+  border: 2px solid transparent;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+  transition: 0.2s ease;
+}
+
+.card-list .card-link .card-image {
+  width: 100%;
+  aspect-ratio: 16 / 12;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .card-wrapper {
+    margin: 0 10px 25px;
+  }
+}
+
+.agency-img,
+.solution-img,
+.hero-img {
+  max-width: 100%;
+}
+
+.agency-img img,
+.solution-img img,
+.hero-img img {
+  object-fit: cover;
+  object-position: center;
+  width: 90%;
+}
